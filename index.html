@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kejutan Ulang Tahun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slider-container">
+            <button class="slide-btn" onclick="showSlide(1)">Mulai Kejutan</button>
+        </div>
+        
+        <div id="slide1" class="slide">
+            <h2>Are you ready?</h2>
+            <button class="slide-btn" id="yesBtn" onclick="handleYes()">Yes</button>
+            <button class="slide-btn" id="noBtn" onclick="handleNo()">No</button>
+            <p id="errorMessage1" style="color: red; display: none;">Harus Yes!</p>
+        </div>
+
+        <div id="slide2" class="slide">
+            <h2>Mau dengar cerita ku?</h2>
+            <button class="slide-btn" id="yesBtn2" onclick="handleYes2()">Yes</button>
+            <button class="slide-btn" id="noBtn2" onclick="handleNo2()">No</button>
+            <p id="errorMessage2" style="color: red; display: none;">Harus Yes!</p>
+        </div>
+
+        <div id="slide3" class="slide">
+            <h2>Aku punya teman yang cerewet bangetttttt tapi orangnya keliatan judes, kalo ngelirik macam emak tiri yang suka nganiaya, lanjut kaga?</h2>
+            <button class="slide-btn" id="yesBtn3" onclick="handleYes3()">Yes</button>
+            <button class="slide-btn" id="noBtn3" onclick="handleNo3()">No</button>
+            <p id="errorMessage3" style="color: red; display: none;">Harus Yes!</p>
+        </div>
+
+        <div id="slide4" class="slide">
+            <h2>Sumpah dia salah satu orang teraneh yang aku temuin, suka banget yang namanya balap entah itu motor atau ga mobil, suka ngehalu tapi kaga sadar diri, mau tau siapa orangnya?</h2>
+            <button class="slide-btn" id="yesBtn4" onclick="handleYes4()">Yes</button>
+            <button class="slide-btn" id="noBtn4" onclick="handleNo4()">No</button>
+            <p id="errorMessage4" style="color: red; display: none;">Harus Yes!</p>
+        </div>
+
+        <div id="slide5" class="slide">
+            <h2><img src="https://example.com/finger-pointing.jpg" alt="Finger pointing" style="width: 50px; height: 50px;"/> Orangnya adalah yang baca cerita gabut aku</h2>
+            <button class="slide-btn" id="nextBtn" onclick="handleNext()">Next</button>
+        </div>
+
+        <div id="slide6" class="slide">
+            <h2>Aku punya hadiah spesial buat kamu, penasaran ga?</h2>
+            <button class="slide-btn" id="yesBtn5" onclick="handleYes5()">Yes</button>
+            <button class="slide-btn" id="noBtn5" onclick="handleNo5()">No</button>
+            <p id="errorMessage5" style="color: red; display: none;">Harus Yes! Kalo gamau dapat dosa.</p>
+        </div>
+
+        <div id="slide7" class="slide">
+            <div class="gift-box">
+                <h2>Happy Brojol Day Nyett..</h2>
+                <p class="small-text">Singkat ae lagi males mikir, do'a mu aminku, aamiin..</p>
+            </div>
+            <button class="slide-btn" id="nextBtn7" onclick="handleNext7()">Next</button>
+        </div>
+
+        <div id="slide8" class="slide">
+            <h2>Kado spesial untuk orang spesial</h2>
+            <button class="slide-btn" id="openBtn" onclick="openGift()">Buka</button>
+            
+            <div id="flowerContainer" class="flower-container">
+                <div id="flower" class="flower"></div>
+                <div id="butterfly" class="butterfly"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
